@@ -1,0 +1,7 @@
+data/com.github.alexkdeveloper.astronum.desktop.in
+data/com.github.alexkdeveloper.astronum.appdata.xml.in
+data/com.github.alexkdeveloper.astronum.gschema.xml
+src/window.ui
+src/main.vala
+src/window.vala
+

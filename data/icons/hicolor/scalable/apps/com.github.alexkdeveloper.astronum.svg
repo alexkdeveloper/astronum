@@ -1,0 +1,13 @@
+<svg width="255" height="255" xmlns="http://www.w3.org/2000/svg">
+ <title>astronum</title>
+
+ <g>
+  <title>Layer 1</title>
+  <path id="svg_1" d="m46.35499,69.99507l39.34278,0l12.15722,-33.99507l12.15723,33.99507l39.34278,0l-31.82892,21.00987l12.15785,33.99507l-31.82894,-21.01044l-31.82893,21.01044l12.15786,-33.99507l-31.82893,-21.00987z" stroke="#000" fill="#529D94"/>
+  <path id="svg_2" d="m54.71,105.72083l42.01657,0l12.98344,-37.0508l12.98345,37.0508l42.01656,0l-33.99205,22.89839l12.98411,37.0508l-33.99207,-22.89902l-33.99206,22.89902l12.98412,-37.0508l-33.99206,-22.89839l-0.00001,0z" stroke="#000" fill="#FFFA8D"/>
+  <text transform="matrix(4.66722 0 0 3.49256 -1573.56 -503.168)" stroke="#000" xml:space="preserve" text-anchor="start" font-family="Noto Sans JP" font-size="26" stroke-width="0" id="svg_4" y="172.72867" x="368.50992" fill="#000000">9</text>
+  <text transform="matrix(4.00003 0 0 3.6985 -1179.01 -628.277)" stroke="#000" xml:space="preserve" text-anchor="start" font-family="Noto Sans JP" font-size="26" id="svg_5" y="224.31493" x="333.83919" stroke-width="0" fill="#000000">3</text>
+  <path stroke="#000" id="svg_6" d="m12.00001,132.6368l56.1494,0l17.3506,-48.89178l17.35061,48.89178l56.14939,0l-45.42574,30.21644l17.35149,48.89178l-45.42576,-30.21726l-45.42575,30.21726l17.3515,-48.89178l-45.42575,-30.21644l0.00001,0z" stroke-width="0" fill="#645A73"/>
+  <text transform="matrix(3.7563 0 0 3.47619 -533.676 -226.547)" stroke="#000" xml:space="preserve" text-anchor="start" font-family="Noto Sans JP" font-size="26" id="svg_3" y="106.91455" x="194.30713" stroke-width="0" fill="#000000">2</text>
+ </g>
+</svg>

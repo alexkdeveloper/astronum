@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Astronum
+Comment=Program for simple astrological and numerological calculations
+Exec=com.github.alexkdeveloper.astronum
+Icon=com.github.alexkdeveloper.astronum
+Terminal=false
+Type=Application
+Categories=GTK;
+StartupNotify=true
