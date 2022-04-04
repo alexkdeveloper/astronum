@@ -26,7 +26,7 @@ parts:
       - gettext
     organize:
       snap/astronum/current/usr: usr
-    parse-info: [usr/share/metainfo/com.github.alexkdeveloper.astronum.appdata.xml]
+    parse-info: [usr/share/appdata/com.github.alexkdeveloper.astronum.appdata.xml]
 
 slots:
   dbus-daemon:
