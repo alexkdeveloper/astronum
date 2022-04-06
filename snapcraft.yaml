@@ -3,13 +3,13 @@ grade: stable
 adopt-info: astronum
 license: GPL-3.0+
 
-base: core18
+base: core20
 confinement: strict
 
 apps:
   astronum:
     command: usr/bin/com.github.alexkdeveloper.astronum
-    extensions: [gnome-3-28]
+    extensions: [gnome-3-34]
     plugs:
       - home
     slots:
