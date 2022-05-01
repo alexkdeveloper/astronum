@@ -248,6 +248,35 @@ namespace Astronum {
             else return "!!!";
             return f;
         }
+
+        public string druid_horoscope(int n,int month){
+            if(month==3&&n==21)return "OAK";
+            if (month==6&&n==24)return "BIRCH";
+            if (month==9&&n==23)return "OLIVE TREE";
+            if (month==12&&n==21||month==12&&n==22)return "BEECH";
+            string f;
+            if (month==12&&n>22||month==1&&n<2||month==6&&n>24||month==7&&n<5)f="APPLE TREE";
+            else if (month==1&&n>1||month==1&&n<12||month==7&&n>4||month==7&&n<15)f="fir-tree";
+            else if(month==1&&n>11||month==1&&n<25||month==7&&n>14||month==7&&n<26)f="ELM";
+            else if(month==1&&n>24||month==2&&n<4||month==7&&n>25||month==8&&n<5)f="CYPRESS";
+            else if(month==2&&n>3||month==2&&n<9||month==8&&n>4||month==8&&n<14)f="POPLAR";
+            else if(month==2&&n>8||month==2&&n<19||month==8&&n>13||month==8&&n<24)f="KARTAS SOUTHERN";
+            else if(month==2&&n>18||month==2&&n<30||month==8&&n>23||month==9&&n<3)f="PINE";
+            else if(month==3&&n>0||month==3&&n<11||month==9&&n>2||month==9&&n<13)f="osier";
+            else if(month==3&&n>10||month==3&&n<21||month==9&&n>12||month==9&&n<23)f="LINDEN";
+            else if(month==3&&n>21||month==3&&n<32||month==9&&n>23||month==10&&n<4)f="HAZEL";
+            else if(month==4&&n>0||month==4&&n<11||month==10&&n>3||month==10&&n<14)f="ROWAN";
+            else if(month==4&&n>10||month==4&&n<21||month==10&&n>13||month==10&&n<24)f="MAPLE";
+            else if(month==4&&n>20||month==4&&n<31||month==10&&n>23||month==11&&n<3)f="hazelnut";
+            else if(month==5&&n>0||month==5&&n<15||month==11&&n>2||month==11&&n<12)f="JASMINE";
+            else if(month==5&&n>14||month==5&&n<25||month==11&&n>11||month==11&&n<22)f="CHESTNUT";
+            else if(month==5&&n>24||month==6&&n<4||month==11&&n>21||month==12&&n<2)f="ash-tree";
+            else if(month==6&&n>3||month==6&&n<14||month==12&&n>1||month==12&&n<12)f="HORNBEAM";
+            else if(month==6&&n>13||month==6&&n<24||month==12&&n>11||month==12&&n<21)f="FIG TREE";
+            else return "!!!";
+            return f;
+        }
+
         private int  trans_num(int num){
             while (num>=10){
                 num=(num/10)+(num%10);

@@ -112,7 +112,7 @@ namespace Astronum {
            stack.visible_child = window_result_page;
            set_widget_visible(back_button,true);
            StringBuilder string_builder = new StringBuilder ();
-         string_builder.append("name number: ").append(calculator.name_number(name).to_string()).append("\nbirth number: ").append(calculator.births_number(day,month,year).to_string()).append("\npsychomatrix:\n").append(calculator.psychomatrix(day,month,year)).append("\non the Slavic horoscope: ").append(calculator.slavian_horoscope(day,month)).append("\non the zodiacal horoscope: ").append(calculator.zodiac_horoscope(day,month)).append("\non the Egyptian horoscope: ").append(calculator.egypt_horoscope(day,month)).append("\non the eastern horoscope: ").append(calculator.ost_horoscope(year));
+         string_builder.append("Name number: ").append(calculator.name_number(name).to_string()).append("\nBirth number: ").append(calculator.births_number(day,month,year).to_string()).append("\n\nPsychomatrix:\n").append(calculator.psychomatrix(day,month,year)).append("\n\nOn the Slavic horoscope: ").append(calculator.slavian_horoscope(day,month)).append("\nOn the zodiacal horoscope: ").append(calculator.zodiac_horoscope(day,month)).append("\nOn the Egyptian horoscope: ").append(calculator.egypt_horoscope(day,month)).append("\nOn the eastern horoscope: ").append(calculator.ost_horoscope(year)).append("\nOn the druid horoscope: ").append(calculator.druid_horoscope(day,month));
          text_view.buffer.text = string_builder.str;
         }
         private void go_to_data_page(){
