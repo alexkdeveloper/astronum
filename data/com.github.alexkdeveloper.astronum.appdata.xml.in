@@ -28,18 +28,18 @@
   <releases>
     <release version="1.0.1" date="2022-05-02">
           <description>
-		      <ul>
-		        <li>UI update</li>
-		        <li>update to GNOME platform 42</li>
-            <li>Added druid horoscope</li>
-		      </ul>
+	     <ul>
+	       <li>UI update</li>
+	       <li>update to GNOME platform 42</li>
+               <li>Added druid horoscope</li>
+	    </ul>
           </description>
         </release>
     <release version="1.0.0" date="2022-02-21">
           <description>
-		      <ul>
-            <li>Initial release</li>
-		      </ul>
+	      <ul>
+                <li>Initial release</li>
+	     </ul>
           </description>
         </release>
   </releases>
