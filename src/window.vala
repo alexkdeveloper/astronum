@@ -22,11 +22,11 @@ namespace Astronum {
 		[GtkChild]
         unowned Gtk.Stack stack;
         [GtkChild]
-        unowned Gtk.Box box_data_page;
+        unowned Gtk.Box data_page;
         [GtkChild]
-        unowned Gtk.ScrolledWindow window_result_page;
+        unowned Gtk.ScrolledWindow result_page;
         [GtkChild]
-        unowned Gtk.TextView text_view;
+        unowned Gtk.Label result_text;
         [GtkChild]
         unowned Gtk.ComboBox combobox;
         [GtkChild]
@@ -66,14 +66,6 @@ namespace Astronum {
             set_widget_visible(back_button,false);
             back_button.clicked.connect(go_to_data_page);
             calculate_button.clicked.connect(on_calculate);
-            var css_provider = new Gtk.CssProvider();
-            try {
-                     css_provider.load_from_data(".text_size {font-size: 15px}");
-                     Gtk.StyleContext.add_provider_for_screen(Gdk.Screen.get_default(), css_provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
-                 } catch (Error e) {
-                     error ("Cannot load CSS stylesheet: %s", e.message);
-             }
-             text_view.get_style_context().add_class("text_size");
 		}
 		private void on_calculate(){
            if(is_empty(entry_name.get_text())){
@@ -109,14 +101,14 @@ namespace Astronum {
         }
         int month = combobox.get_active()+1;
         if(input_correct(day,month,year))return;
-           stack.visible_child = window_result_page;
+           stack.visible_child = result_page;
            set_widget_visible(back_button,true);
            StringBuilder string_builder = new StringBuilder ();
          string_builder.append("Name number: ").append(calculator.name_number(name).to_string()).append("\nBirth number: ").append(calculator.births_number(day,month,year).to_string()).append("\n\nPsychomatrix:\n").append(calculator.psychomatrix(day,month,year)).append("\n\nOn the Slavic horoscope: ").append(calculator.slavian_horoscope(day,month)).append("\nOn the zodiacal horoscope: ").append(calculator.zodiac_horoscope(day,month)).append("\nOn the Egyptian horoscope: ").append(calculator.egypt_horoscope(day,month)).append("\nOn the eastern horoscope: ").append(calculator.ost_horoscope(year)).append("\nOn the druid horoscope: ").append(calculator.druid_horoscope(day,month));
-         text_view.buffer.text = string_builder.str;
+         result_text.set_text(string_builder.str);
         }
         private void go_to_data_page(){
-           stack.visible_child = box_data_page;
+           stack.visible_child = data_page;
            set_widget_visible(back_button,false);
         }
      private bool input_correct(int n,int l,int m){

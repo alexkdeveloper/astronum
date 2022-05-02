@@ -66,12 +66,11 @@
         <property name="transition-duration">600</property>
         <property name="transition-type">slide-left-right</property>
         <child>
-          <object class="GtkBox" id="box_data_page">
+          <object class="GtkBox" id="data_page">
             <property name="visible">True</property>
             <property name="can-focus">False</property>
             <property name="orientation">vertical</property>
             <property name="spacing">12</property>
-            <property name="homogeneous">True</property>
             <child>
               <object class="GtkBox">
                 <property name="visible">True</property>
@@ -248,17 +247,26 @@
           </packing>
         </child>
         <child>
-          <object class="GtkScrolledWindow" id="window_result_page">
+          <object class="GtkScrolledWindow" id="result_page">
             <property name="visible">True</property>
-            <property name="can-focus">True</property>
-            <property name="shadow-type">in</property>
+            <property name="can-focus">False</property>
             <child>
-              <object class="GtkTextView" id="text_view">
+              <object class="GtkViewport">
                 <property name="visible">True</property>
-                <property name="can-focus">True</property>
-                <property name="editable">False</property>
-                <property name="wrap-mode">word</property>
-                <property name="cursor-visible">False</property>
+                <property name="can-focus">False</property>
+                <property name="shadow-type">none</property>
+                <child>
+                  <object class="GtkLabel" id="result_text">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="justify">center</property>
+                    <property name="wrap">True</property>
+                    <property name="selectable">True</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Cantarell 12"/>
+                    </attributes>
+                  </object>
+                </child>
               </object>
             </child>
           </object>
@@ -281,7 +289,7 @@
             <property name="visible">True</property>
             <property name="can-focus">True</property>
             <property name="receives-default">True</property>
-            <property name="tooltip-text" translatable="yes">back</property>
+            <property name="tooltip-text" translatable="yes">Back</property>
             <property name="image">image1</property>
           </object>
         </child>
