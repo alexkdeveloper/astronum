@@ -197,6 +197,39 @@ namespace Astronum {
                     return "!!!";
             }
         }
+        public  string  tibet_horoscope(int n){
+            while (n>12){
+                n-=12;
+            }
+            switch (n){
+                case 1:
+                    return "Metal Gong";
+                case 2:
+                    return "lake turtle";
+                case 3:
+                    return "Leather Bracelet";
+                case 4:
+                    return "Black Buffalo";
+                case 5:
+                    return "New moon";
+                case 6:
+                    return "Hot sun";
+                case 7:
+                    return "monk and monkey";
+                case 8:
+                    return "Kite";
+                case 9:
+                    return "Cobra";
+                case 10:
+                    return "Keeper of the Hearth";
+                case 11:
+                    return "Water Source";
+                case 12:
+                    return "Jade Column";
+                default:
+                    return "!!!";
+            }
+        }
           public string zodiac_horoscope(int n,int month){
             string  f;
             if (month==3&&n>20||month==4&&n<21)f="Aries";
