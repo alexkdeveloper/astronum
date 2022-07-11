@@ -1,0 +1,520 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2022-07-11 19:06+0800\n"
+"PO-Revision-Date: 2022-07-11 20:02+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ru_RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"X-Generator: Poedit 3.1\n"
+"X-Poedit-Basepath: ../src\n"
+"X-Poedit-SearchPath-0: calculator.vala\n"
+"X-Poedit-SearchPath-1: window.ui\n"
+"X-Poedit-SearchPath-2: window.vala\n"
+
+#: calculator.vala:235
+msgid "cock"
+msgstr "петух"
+
+#: calculator.vala:237 calculator.vala:322
+msgid "dog"
+msgstr "собака"
+
+#: calculator.vala:239
+msgid "pig"
+msgstr "свинья"
+
+#: calculator.vala:241
+msgid "rat"
+msgstr "крыса"
+
+#: calculator.vala:243
+msgid "bull"
+msgstr "бык"
+
+#: calculator.vala:245
+msgid "tiger"
+msgstr "тигр"
+
+#: calculator.vala:247
+msgid "rabbit"
+msgstr "кролик"
+
+#: calculator.vala:249
+msgid "the Dragon"
+msgstr "дракон"
+
+#: calculator.vala:251
+msgid "snake"
+msgstr "змея"
+
+#: calculator.vala:253
+msgid "horse"
+msgstr "лошадь"
+
+#: calculator.vala:255
+msgid "goat"
+msgstr "коза"
+
+#: calculator.vala:257
+msgid "monkey"
+msgstr "обезьяна"
+
+#: calculator.vala:268
+msgid "Metal Gong"
+msgstr "Металлический Гонг"
+
+#: calculator.vala:270
+msgid "lake turtle"
+msgstr "озерная черепаха"
+
+#: calculator.vala:272
+msgid "Leather Bracelet"
+msgstr "Кожанный Браслет"
+
+#: calculator.vala:274
+msgid "Black Buffalo"
+msgstr "Черный Буйвол"
+
+#: calculator.vala:276
+msgid "New moon"
+msgstr "Новая луна"
+
+#: calculator.vala:278
+msgid "Hot sun"
+msgstr "Горячее солнце"
+
+#: calculator.vala:280
+msgid "monk and monkey"
+msgstr "монах и обезьяна"
+
+#: calculator.vala:282
+msgid "Kite"
+msgstr "Воздушный змей"
+
+#: calculator.vala:284
+msgid "Cobra"
+msgstr "Кобра"
+
+#: calculator.vala:286
+msgid "Keeper of the Hearth"
+msgstr "Хранитель домашнего очага"
+
+#: calculator.vala:288
+msgid "Water Source"
+msgstr "Источник Воды"
+
+#: calculator.vala:290
+msgid "Jade Column"
+msgstr "Нефритовая колонна"
+
+#: calculator.vala:297
+msgid "Aries"
+msgstr "Овен"
+
+#: calculator.vala:298
+msgid "Taurus"
+msgstr "Телец"
+
+#: calculator.vala:299
+msgid "Gemini"
+msgstr "Близнецы"
+
+#: calculator.vala:300
+msgid "Cancer"
+msgstr "Рак"
+
+#: calculator.vala:301
+msgid "Leo"
+msgstr "Лев"
+
+#: calculator.vala:302
+msgid "Virgo"
+msgstr "Дева"
+
+#: calculator.vala:303
+msgid "Libra"
+msgstr "Весы"
+
+#: calculator.vala:304
+msgid "Scorpio"
+msgstr "Скорпион"
+
+#: calculator.vala:305
+msgid "Sagittarius"
+msgstr "Стрелец"
+
+#: calculator.vala:306
+msgid "Capricorn"
+msgstr "Козерог"
+
+#: calculator.vala:307
+msgid "Aquarius"
+msgstr "Водолей"
+
+#: calculator.vala:308
+msgid "Pisces"
+msgstr "Рыбы"
+
+#: calculator.vala:314
+msgid "ermine"
+msgstr "горностай"
+
+#: calculator.vala:315
+msgid "toad"
+msgstr "жаба"
+
+#: calculator.vala:316
+msgid "grasshopper"
+msgstr "кузнечик"
+
+#: calculator.vala:317
+msgid "hamster"
+msgstr "хомяк"
+
+#: calculator.vala:318
+msgid "snail"
+msgstr "улитка"
+
+#: calculator.vala:319
+msgid "ant"
+msgstr "муравей"
+
+#: calculator.vala:320
+msgid "cockchafer"
+msgstr "хрущ"
+
+#: calculator.vala:321
+msgid "beaver"
+msgstr "бобр"
+
+#: calculator.vala:323
+msgid "bear"
+msgstr "медведь"
+
+#: calculator.vala:324
+msgid "wolverine"
+msgstr "росомаха"
+
+#: calculator.vala:325
+msgid "raven"
+msgstr "ворон"
+
+#: calculator.vala:331
+msgid "Nile"
+msgstr "Нил"
+
+#: calculator.vala:332
+msgid "Amon-Ra"
+msgstr "Амон-Ра"
+
+#: calculator.vala:333
+msgid "Mut"
+msgstr "Мут"
+
+#: calculator.vala:334
+msgid "Geb"
+msgstr "Геб"
+
+#: calculator.vala:335
+msgid "Isida"
+msgstr "Исида"
+
+#: calculator.vala:336
+msgid "Osiris"
+msgstr "Осирис"
+
+#: calculator.vala:337
+msgid "Tot"
+msgstr "Тот"
+
+#: calculator.vala:338
+msgid "Gor"
+msgstr "Гор"
+
+#: calculator.vala:339
+msgid "Anubis"
+msgstr "Анубис"
+
+#: calculator.vala:340
+msgid "Set"
+msgstr "Сет"
+
+#: calculator.vala:341
+msgid "Bastet"
+msgstr "Бастет"
+
+#: calculator.vala:342
+msgid "Secmet"
+msgstr "Секмет"
+
+#: calculator.vala:348
+msgid "OAK"
+msgstr "дуб"
+
+#: calculator.vala:349
+msgid "BIRCH"
+msgstr "береза"
+
+#: calculator.vala:350
+msgid "OLIVE TREE"
+msgstr "ОЛИВКОВОЕ ДЕРЕВО"
+
+#: calculator.vala:351
+msgid "BEECH"
+msgstr "бук"
+
+#: calculator.vala:353
+msgid "APPLE TREE"
+msgstr "ЯБЛОНЯ"
+
+#: calculator.vala:354
+msgid "fir-tree"
+msgstr "ель"
+
+#: calculator.vala:355
+msgid "ELM"
+msgstr "ВЯЗ"
+
+#: calculator.vala:356
+msgid "CYPRESS"
+msgstr "кипарис"
+
+#: calculator.vala:357
+msgid "POPLAR"
+msgstr "ТОПОЛЬ"
+
+#: calculator.vala:358
+msgid "KARTAS SOUTHERN"
+msgstr "КАРТАС ЮЖНЫЙ"
+
+#: calculator.vala:359
+msgid "PINE"
+msgstr "сосна"
+
+#: calculator.vala:360
+msgid "osier"
+msgstr "ива"
+
+#: calculator.vala:361
+msgid "LINDEN"
+msgstr "липа"
+
+#: calculator.vala:362
+msgid "HAZEL"
+msgstr "орех"
+
+#: calculator.vala:363
+msgid "ROWAN"
+msgstr "рябина"
+
+#: calculator.vala:364
+msgid "MAPLE"
+msgstr "клен"
+
+#: calculator.vala:365
+msgid "hazelnut"
+msgstr "орешник"
+
+#: calculator.vala:366
+msgid "JASMINE"
+msgstr "Жасмин"
+
+#: calculator.vala:367
+msgid "CHESTNUT"
+msgstr "каштан"
+
+#: calculator.vala:368
+msgid "ash-tree"
+msgstr "ясень"
+
+#: calculator.vala:369
+msgid "HORNBEAM"
+msgstr "ГРАБ"
+
+#: calculator.vala:370
+msgid "FIG TREE"
+msgstr "ФИГОВОЕ ДЕРЕВО"
+
+#: window.ui:17
+msgid "January"
+msgstr "Январь"
+
+#: window.ui:20
+msgid "February"
+msgstr "Февраль"
+
+#: window.ui:23
+msgid "March"
+msgstr "Март"
+
+#: window.ui:26
+msgid "April"
+msgstr "Апрель"
+
+#: window.ui:29
+msgid "May"
+msgstr "Май"
+
+#: window.ui:32
+msgid "June"
+msgstr "Июнь"
+
+#: window.ui:35
+msgid "July"
+msgstr "Июль"
+
+#: window.ui:38
+msgid "August"
+msgstr "Август"
+
+#: window.ui:41
+msgid "September"
+msgstr "Сентябрь"
+
+#: window.ui:44
+msgid "October"
+msgstr "Октябрь"
+
+#: window.ui:47
+msgid "November"
+msgstr "Ноябрь"
+
+#: window.ui:50
+msgid "December"
+msgstr "Декабрь"
+
+#: window.ui:84
+msgid "Name:"
+msgstr "Имя:"
+
+#: window.ui:121
+msgid "Day of births:"
+msgstr "День рождения:"
+
+#: window.ui:158
+msgid "Month of births:"
+msgstr "Месяц рождения:"
+
+#: window.ui:203
+msgid "Year of births:"
+msgstr "Год рождения:"
+
+#: window.ui:232
+msgid "CALCULATE"
+msgstr "ВЫЧИСЛИТЬ"
+
+#: window.ui:246
+msgid "page0"
+msgstr ""
+
+#: window.ui:275
+msgid "page1"
+msgstr ""
+
+#: window.ui:292
+msgid "Back"
+msgstr "Назад"
+
+#: window.vala:72
+msgid "Enter the name"
+msgstr "Введите имя"
+
+#: window.vala:77
+msgid "Enter the day of births"
+msgstr "Введите день рождения"
+
+#: window.vala:82
+msgid "Enter the year of births"
+msgstr "Введите год рождения"
+
+#: window.vala:93
+msgid "Enter the correct data in the name field"
+msgstr "Введите корректные данные в поле имени"
+
+#: window.vala:102
+msgid "Name number: "
+msgstr "Число имени: "
+
+#: window.vala:102
+msgid ""
+"\n"
+"Birth number: "
+msgstr ""
+"\n"
+"Число рождения: "
+
+#: window.vala:102
+msgid ""
+"\n"
+"\n"
+"Psychomatrix:\n"
+msgstr ""
+"\n"
+"\n"
+"Психоматрица:\n"
+
+#: window.vala:102
+msgid ""
+"\n"
+"\n"
+"On the Slavic horoscope: "
+msgstr ""
+"\n"
+"\n"
+"По славянскому гороскопу: "
+
+#: window.vala:102
+msgid ""
+"\n"
+"On the zodiacal horoscope: "
+msgstr ""
+"\n"
+"По зодиакальному гороскопу: "
+
+#: window.vala:102
+msgid ""
+"\n"
+"On the Egyptian horoscope: "
+msgstr ""
+"\n"
+"По египетскому гороскопу: "
+
+#: window.vala:102
+msgid ""
+"\n"
+"On the eastern horoscope: "
+msgstr ""
+"\n"
+"По восточному гороскопу: "
+
+#: window.vala:102
+msgid ""
+"\n"
+"On the druid horoscope: "
+msgstr ""
+"\n"
+"По гороскопу друидов: "
+
+#: window.vala:102
+msgid ""
+"\n"
+"On the Tibetan horoscope: "
+msgstr ""
+"\n"
+"По тибетскому гороскопу: "
+
+#: window.vala:153
+msgid ""
+"Incorrect number of the month! Check the consistency of the entered data."
+msgstr ""
+"Некорректное число месяца! Проверьте правильность введенных данных."
+
+#: window.vala:172
+msgid "Message"
+msgstr "Сообщение"

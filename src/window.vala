@@ -69,17 +69,17 @@ namespace Astronum {
 		}
 		private void on_calculate(){
            if(is_empty(entry_name.get_text())){
-             alert("Enter the name");
+             alert(_("Enter the name"));
              entry_name.grab_focus();
              return;
          }
          if(is_empty(entry_day.get_text())){
-             alert("Enter the day of births");
+             alert(_("Enter the day of births"));
              entry_day.grab_focus();
              return;
          }
          if(is_empty(entry_year.get_text())){
-             alert("Enter the year of births");
+             alert(_("Enter the year of births"));
              entry_year.grab_focus();
              return;
          }
@@ -90,12 +90,7 @@ namespace Astronum {
         var calculator = new Calculator();
 
         if(calculator.name_number(name)==0){
-            alert("Enter the correct data in the name field");
-            entry_name.grab_focus();
-            return;
-        }
-        if(calculator.name_number(name)==-1){
-            alert("When entering a name, only English letters, dashes and spaces are allowed");
+            alert(_("Enter the correct data in the name field"));
             entry_name.grab_focus();
             return;
         }
@@ -104,7 +99,7 @@ namespace Astronum {
            stack.visible_child = result_page;
            set_widget_visible(back_button,true);
            StringBuilder string_builder = new StringBuilder ();
-         string_builder.append("Name number: ").append(calculator.name_number(name).to_string()).append("\nBirth number: ").append(calculator.births_number(day,month,year).to_string()).append("\n\nPsychomatrix:\n").append(calculator.psychomatrix(day,month,year)).append("\n\nOn the Slavic horoscope: ").append(calculator.slavian_horoscope(day,month)).append("\nOn the zodiacal horoscope: ").append(calculator.zodiac_horoscope(day,month)).append("\nOn the Egyptian horoscope: ").append(calculator.egypt_horoscope(day,month)).append("\nOn the eastern horoscope: ").append(calculator.ost_horoscope(year)).append("\nOn the druid horoscope: ").append(calculator.druid_horoscope(day,month)).append("\nOn the Tibetan horoscope: ").append(calculator.tibet_horoscope(year));
+         string_builder.append(_("Name number: ")).append(calculator.name_number(name).to_string()).append(_("\nBirth number: ")).append(calculator.births_number(day,month,year).to_string()).append(_("\n\nPsychomatrix:\n")).append(calculator.psychomatrix(day,month,year)).append(_("\n\nOn the Slavic horoscope: ")).append(calculator.slavian_horoscope(day,month)).append(_("\nOn the zodiacal horoscope: ")).append(calculator.zodiac_horoscope(day,month)).append(_("\nOn the Egyptian horoscope: ")).append(calculator.egypt_horoscope(day,month)).append(_("\nOn the eastern horoscope: ")).append(calculator.ost_horoscope(year)).append(_("\nOn the druid horoscope: ")).append(calculator.druid_horoscope(day,month)).append(_("\nOn the Tibetan horoscope: ")).append(calculator.tibet_horoscope(year));
          result_text.set_text(string_builder.str);
         }
         private void go_to_data_page(){
@@ -155,14 +150,10 @@ namespace Astronum {
                 break;
         }
             if (n>days||n==0){
-                alert("Incorrect number of the month! Check the consistency of the entered data.");
+                alert(_("Incorrect number of the month! Check the consistency of the entered data."));
                 entry_day.grab_focus();
                 return true;
-            }else if (m==0||m<1000||m>9999){
-                alert("The year number is out of range! The year number must be in the range from 1000 to 9999 inclusive.");
-                entry_year.grab_focus();
-                return true;
-            }else {
+            }else{
                 return false;
             }
     }
@@ -178,7 +169,7 @@ namespace Astronum {
 
     private void alert (string str){
           var dialog_alert = new Gtk.MessageDialog(this, Gtk.DialogFlags.MODAL, Gtk.MessageType.INFO, Gtk.ButtonsType.OK, str);
-          dialog_alert.set_title("Message");
+          dialog_alert.set_title(_("Message"));
           dialog_alert.run();
           dialog_alert.destroy();
        }

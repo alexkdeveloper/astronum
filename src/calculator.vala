@@ -12,6 +12,14 @@ namespace Astronum {
                     case "A":
                     case "J":
                     case "S":
+                    case "а":
+                    case "и":
+                    case "с":
+                    case "ъ":
+                    case "А":
+                    case "И":
+                    case "С":
+                    case "Ъ":
                         n += 1;
                         break;
                     case "b":
@@ -20,6 +28,14 @@ namespace Astronum {
                     case "B":
                     case "K":
                     case "T":
+                    case "б":
+                    case "й":
+                    case "т":
+                    case "ы":
+                    case "Б":
+                    case "Й":
+                    case "Т":
+                    case "Ы":
                         n += 2;
                         break;
                     case "c":
@@ -28,6 +44,14 @@ namespace Astronum {
                     case "C":
                     case "L":
                     case "U":
+                    case "в":
+                    case "к":
+                    case "у":
+                    case "ь":
+                    case "В":
+                    case "К":
+                    case "У":
+                    case "Ь":
                         n += 3;
                         break;
                     case "d":
@@ -36,6 +60,14 @@ namespace Astronum {
                     case "D":
                     case "M":
                     case "V":
+                    case "г":
+                    case "л":
+                    case "ф":
+                    case "э":
+                    case "Г":
+                    case "Л":
+                    case "Ф":
+                    case "Э":
                         n += 4;
                         break;
                     case "e":
@@ -44,6 +76,14 @@ namespace Astronum {
                     case "E":
                     case "N":
                     case "W":
+                    case "д":
+                    case "м":
+                    case "х":
+                    case "ю":
+                    case "Д":
+                    case "М":
+                    case "Х":
+                    case "Ю":
                         n += 5;
                         break;
                     case "f":
@@ -52,6 +92,14 @@ namespace Astronum {
                     case "F":
                     case "O":
                     case "X":
+                    case "е":
+                    case "н":
+                    case "ц":
+                    case "я":
+                    case "Е":
+                    case "Н":
+                    case "Ц":
+                    case "Я":
                         n += 6;
                         break;
                     case "g":
@@ -60,6 +108,12 @@ namespace Astronum {
                     case "G":
                     case "P":
                     case "Y":
+                    case "ё":
+                    case "о":
+                    case "ч":
+                    case "Ё":
+                    case "О":
+                    case "Ч":
                         n += 7;
                         break;
                     case "h":
@@ -68,20 +122,28 @@ namespace Astronum {
                     case "H":
                     case "Q":
                     case "Z":
+                    case "ж":
+                    case "п":
+                    case "ш":
+                    case "Ж":
+                    case "П":
+                    case "Ш":
                         n += 8;
                         break;
                     case "i":
                     case "r":
                     case "I":
                     case "R":
+                    case "з":
+                    case "р":
+                    case "щ":
+                    case "З":
+                    case "Р":
+                    case "Щ":
                         n += 9;
                         break;
-                    case " ":
-                    case "-":
-                        n += 0;
-                        break;
                     default:
-                        return -1;
+                        break;
                 }
         }
         return trans_num(n);
@@ -170,29 +232,29 @@ namespace Astronum {
             }
             switch (n){
                 case 1:
-                    return "cock";
+                    return _("cock");
                 case 2:
-                    return "dog";
+                    return _("dog");
                 case 3:
-                    return "pig";
+                    return _("pig");
                 case 4:
-                    return "rat";
+                    return _("rat");
                 case 5:
-                    return "bull";
+                    return _("bull");
                 case 6:
-                    return "tiger";
+                    return _("tiger");
                 case 7:
-                    return "rabbit";
+                    return _("rabbit");
                 case 8:
-                    return "the Dragon";
+                    return _("the Dragon");
                 case 9:
-                    return "snake";
+                    return _("snake");
                 case 10:
-                    return "horse";
+                    return _("horse");
                 case 11:
-                    return "goat";
+                    return _("goat");
                 case 12:
-                    return "monkey";
+                    return _("monkey");
                 default:
                     return "!!!";
             }
@@ -203,109 +265,109 @@ namespace Astronum {
             }
             switch (n){
                 case 1:
-                    return "Metal Gong";
+                    return _("Metal Gong");
                 case 2:
-                    return "lake turtle";
+                    return _("lake turtle");
                 case 3:
-                    return "Leather Bracelet";
+                    return _("Leather Bracelet");
                 case 4:
-                    return "Black Buffalo";
+                    return _("Black Buffalo");
                 case 5:
-                    return "New moon";
+                    return _("New moon");
                 case 6:
-                    return "Hot sun";
+                    return _("Hot sun");
                 case 7:
-                    return "monk and monkey";
+                    return _("monk and monkey");
                 case 8:
-                    return "Kite";
+                    return _("Kite");
                 case 9:
-                    return "Cobra";
+                    return _("Cobra");
                 case 10:
-                    return "Keeper of the Hearth";
+                    return _("Keeper of the Hearth");
                 case 11:
-                    return "Water Source";
+                    return _("Water Source");
                 case 12:
-                    return "Jade Column";
+                    return _("Jade Column");
                 default:
                     return "!!!";
             }
         }
           public string zodiac_horoscope(int n,int month){
             string  f;
-            if (month==3&&n>20||month==4&&n<21)f="Aries";
-            else if (month==4&&n>20||month==5&&n<22)f="Taurus";
-            else if (month==5&&n>21||month==6&&n<22)f="Gemini";
-            else if (month==6&&n>21||month==7&&n<23)f="Cancer";
-            else if (month==7&&n>22||month==8&&n<22)f="Leo";
-            else if (month==8&&n>21||month==9&&n<24)f="Virgo";
-            else if (month==9&&n>23||month==10&&n<24)f="Libra";
-            else if (month==10&&n>23||month==11&&n<23)f="Scorpio";
-            else if (month==11&&n>22||month==12&&n<23)f="Sagittarius";
-            else if (month==12&&n>22||month==1&&n<21)f="Capricorn";
-            else if (month==1&&n>20||month==2&&n<20)f="Aquarius";
-            else if (month==2&&n>19||month==3&&n<21)f="Pisces";
+            if (month==3&&n>20||month==4&&n<21)f=_("Aries");
+            else if (month==4&&n>20||month==5&&n<22)f=_("Taurus");
+            else if (month==5&&n>21||month==6&&n<22)f=_("Gemini");
+            else if (month==6&&n>21||month==7&&n<23)f=_("Cancer");
+            else if (month==7&&n>22||month==8&&n<22)f=_("Leo");
+            else if (month==8&&n>21||month==9&&n<24)f=_("Virgo");
+            else if (month==9&&n>23||month==10&&n<24)f=_("Libra");
+            else if (month==10&&n>23||month==11&&n<23)f=_("Scorpio");
+            else if (month==11&&n>22||month==12&&n<23)f=_("Sagittarius");
+            else if (month==12&&n>22||month==1&&n<21)f=_("Capricorn");
+            else if (month==1&&n>20||month==2&&n<20)f=_("Aquarius");
+            else if (month==2&&n>19||month==3&&n<21)f=_("Pisces");
             else return "!!!";
             return f;
         }
        public string slavian_horoscope(int n,int month){
             string f;
-            if (month==3&&n>9||month==4&&n<11)f="ermine";
-            else if (month==4&&n>9||month==5&&n<11)f="toad";
-            else if (month==5&&n>9||month==6&&n<11)f="grasshopper";
-            else if (month==6&&n>9||month==7&&n<11)f="hamster";
-            else if (month==7&&n>9||month==8&&n<11)f="snail";
-            else if (month==8&&n>9||month==9&&n<11)f="ant";
-            else if (month==9&&n>9||month==10&&n<11)f="cockchafer";
-            else if (month==10&&n>9||month==11&&n<11)f="beaver";
-            else if (month==11&&n>9||month==12&&n<11)f="dog";
-            else if (month==12&&n>9||month==1&&n<11)f="bear";
-            else if (month==1&&n>9||month==2&&n<11)f="wolverine";
-            else if (month==2&&n>9||month==3&&n<11)f="raven";
+            if (month==3&&n>9||month==4&&n<11)f=_("ermine");
+            else if (month==4&&n>9||month==5&&n<11)f=_("toad");
+            else if (month==5&&n>9||month==6&&n<11)f=_("grasshopper");
+            else if (month==6&&n>9||month==7&&n<11)f=_("hamster");
+            else if (month==7&&n>9||month==8&&n<11)f=_("snail");
+            else if (month==8&&n>9||month==9&&n<11)f=_("ant");
+            else if (month==9&&n>9||month==10&&n<11)f=_("cockchafer");
+            else if (month==10&&n>9||month==11&&n<11)f=_("beaver");
+            else if (month==11&&n>9||month==12&&n<11)f=_("dog");
+            else if (month==12&&n>9||month==1&&n<11)f=_("bear");
+            else if (month==1&&n>9||month==2&&n<11)f=_("wolverine");
+            else if (month==2&&n>9||month==3&&n<11)f=_("raven");
             else return "!!!";
             return f;
         }
        public string egypt_horoscope(int n,int month){
             string f;
-            if (month==1&&n>0&&n<8||month==6&&n>18&&n<29||month==9&&n>0&&n<8||month==11&&n>17&&n<27)f="Nile";
-            else if (month==1&&n>7&&n<22||month==2&&n>0&&n<12)f="Amon-Ra";
-            else if (month==1&&n>21&&n<32||month==9&&n>7&&n<23)f="Mut";
-            else if (month==2&&n>11&&n<30||month==8&&n>19&&n<32)f="Geb";
-            else if (month==3&&n>10&&n<32||month==10&&n>17&&n<30||month==12&&n>18&&n<32)f="Isida";
-            else if (month==3&&n>0&&n<11||month==11&&n>26||month==12&&n<19)f="Osiris";
-            else if (month==4&&n>0&&n<20||month==11&&n>7&&n<18)f="Tot";
-            else if (month==5&&n>0&&n<8||month==4&&n>19&&n<31||month==8&&n>11&&n<20)f="Gor";
-            else if (month==5&&n>7&&n<28||month==6&&n>28||month==7&&n<14)f="Anubis";
-            else if (month==5&&n>27||month==6&&n<19||month==9&&n>27||month==10&&n<3)f="Set";
-            else if (month==7&&n>13&&n<29||month==9&&n>22&&n<28||month==10&&n>2&&n<18)f="Bastet";
-            else if (month==7&&n>28||month==8&&n<12||month==10&&n>29||month==11&&n<8)f="Secmet";
+            if (month==1&&n>0&&n<8||month==6&&n>18&&n<29||month==9&&n>0&&n<8||month==11&&n>17&&n<27)f=_("Nile");
+            else if (month==1&&n>7&&n<22||month==2&&n>0&&n<12)f=_("Amon-Ra");
+            else if (month==1&&n>21&&n<32||month==9&&n>7&&n<23)f=_("Mut");
+            else if (month==2&&n>11&&n<30||month==8&&n>19&&n<32)f=_("Geb");
+            else if (month==3&&n>10&&n<32||month==10&&n>17&&n<30||month==12&&n>18&&n<32)f=_("Isida");
+            else if (month==3&&n>0&&n<11||month==11&&n>26||month==12&&n<19)f=_("Osiris");
+            else if (month==4&&n>0&&n<20||month==11&&n>7&&n<18)f=_("Tot");
+            else if (month==5&&n>0&&n<8||month==4&&n>19&&n<31||month==8&&n>11&&n<20)f=_("Gor");
+            else if (month==5&&n>7&&n<28||month==6&&n>28||month==7&&n<14)f=_("Anubis");
+            else if (month==5&&n>27||month==6&&n<19||month==9&&n>27||month==10&&n<3)f=_("Set");
+            else if (month==7&&n>13&&n<29||month==9&&n>22&&n<28||month==10&&n>2&&n<18)f=_("Bastet");
+            else if (month==7&&n>28||month==8&&n<12||month==10&&n>29||month==11&&n<8)f=_("Secmet");
             else return "!!!";
             return f;
         }
 
         public string druid_horoscope(int n,int month){
-            if(month==3&&n==21)return "OAK";
-            if (month==6&&n==24)return "BIRCH";
-            if (month==9&&n==23)return "OLIVE TREE";
-            if (month==12&&n==21||month==12&&n==22)return "BEECH";
+            if(month==3&&n==21)return _("OAK");
+            if (month==6&&n==24)return _("BIRCH");
+            if (month==9&&n==23)return _("OLIVE TREE");
+            if (month==12&&n==21||month==12&&n==22)return _("BEECH");
             string f;
-            if (month==12&&n>22||month==1&&n<2||month==6&&n>24||month==7&&n<5)f="APPLE TREE";
-            else if (month==1&&n>1||month==1&&n<12||month==7&&n>4||month==7&&n<15)f="fir-tree";
-            else if(month==1&&n>11||month==1&&n<25||month==7&&n>14||month==7&&n<26)f="ELM";
-            else if(month==1&&n>24||month==2&&n<4||month==7&&n>25||month==8&&n<5)f="CYPRESS";
-            else if(month==2&&n>3||month==2&&n<9||month==8&&n>4||month==8&&n<14)f="POPLAR";
-            else if(month==2&&n>8||month==2&&n<19||month==8&&n>13||month==8&&n<24)f="KARTAS SOUTHERN";
-            else if(month==2&&n>18||month==2&&n<30||month==8&&n>23||month==9&&n<3)f="PINE";
-            else if(month==3&&n>0||month==3&&n<11||month==9&&n>2||month==9&&n<13)f="osier";
-            else if(month==3&&n>10||month==3&&n<21||month==9&&n>12||month==9&&n<23)f="LINDEN";
-            else if(month==3&&n>21||month==3&&n<32||month==9&&n>23||month==10&&n<4)f="HAZEL";
-            else if(month==4&&n>0||month==4&&n<11||month==10&&n>3||month==10&&n<14)f="ROWAN";
-            else if(month==4&&n>10||month==4&&n<21||month==10&&n>13||month==10&&n<24)f="MAPLE";
-            else if(month==4&&n>20||month==4&&n<31||month==10&&n>23||month==11&&n<3)f="hazelnut";
-            else if(month==5&&n>0||month==5&&n<15||month==11&&n>2||month==11&&n<12)f="JASMINE";
-            else if(month==5&&n>14||month==5&&n<25||month==11&&n>11||month==11&&n<22)f="CHESTNUT";
-            else if(month==5&&n>24||month==6&&n<4||month==11&&n>21||month==12&&n<2)f="ash-tree";
-            else if(month==6&&n>3||month==6&&n<14||month==12&&n>1||month==12&&n<12)f="HORNBEAM";
-            else if(month==6&&n>13||month==6&&n<24||month==12&&n>11||month==12&&n<21)f="FIG TREE";
+            if (month==12&&n>22||month==1&&n<2||month==6&&n>24||month==7&&n<5)f=_("APPLE TREE");
+            else if (month==1&&n>1||month==1&&n<12||month==7&&n>4||month==7&&n<15)f=_("fir-tree");
+            else if(month==1&&n>11||month==1&&n<25||month==7&&n>14||month==7&&n<26)f=_("ELM");
+            else if(month==1&&n>24||month==2&&n<4||month==7&&n>25||month==8&&n<5)f=_("CYPRESS");
+            else if(month==2&&n>3||month==2&&n<9||month==8&&n>4||month==8&&n<14)f=_("POPLAR");
+            else if(month==2&&n>8||month==2&&n<19||month==8&&n>13||month==8&&n<24)f=_("KARTAS SOUTHERN");
+            else if(month==2&&n>18||month==2&&n<30||month==8&&n>23||month==9&&n<3)f=_("PINE");
+            else if(month==3&&n>0||month==3&&n<11||month==9&&n>2||month==9&&n<13)f=_("osier");
+            else if(month==3&&n>10||month==3&&n<21||month==9&&n>12||month==9&&n<23)f=_("LINDEN");
+            else if(month==3&&n>21||month==3&&n<32||month==9&&n>23||month==10&&n<4)f=_("HAZEL");
+            else if(month==4&&n>0||month==4&&n<11||month==10&&n>3||month==10&&n<14)f=_("ROWAN");
+            else if(month==4&&n>10||month==4&&n<21||month==10&&n>13||month==10&&n<24)f=_("MAPLE");
+            else if(month==4&&n>20||month==4&&n<31||month==10&&n>23||month==11&&n<3)f=_("hazelnut");
+            else if(month==5&&n>0||month==5&&n<15||month==11&&n>2||month==11&&n<12)f=_("JASMINE");
+            else if(month==5&&n>14||month==5&&n<25||month==11&&n>11||month==11&&n<22)f=_("CHESTNUT");
+            else if(month==5&&n>24||month==6&&n<4||month==11&&n>21||month==12&&n<2)f=_("ash-tree");
+            else if(month==6&&n>3||month==6&&n<14||month==12&&n>1||month==12&&n<12)f=_("HORNBEAM");
+            else if(month==6&&n>13||month==6&&n<24||month==12&&n>11||month==12&&n<21)f=_("FIG TREE");
             else return "!!!";
             return f;
         }
