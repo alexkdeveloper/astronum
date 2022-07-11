@@ -4,4 +4,5 @@ data/com.github.alexkdeveloper.astronum.gschema.xml
 src/window.ui
 src/main.vala
 src/window.vala
+src/calculator.vala
 
