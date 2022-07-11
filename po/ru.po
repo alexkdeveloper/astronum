@@ -75,7 +75,7 @@ msgstr "озерная черепаха"
 
 #: calculator.vala:272
 msgid "Leather Bracelet"
-msgstr "Кожанный Браслет"
+msgstr "Кожаный Браслет"
 
 #: calculator.vala:274
 msgid "Black Buffalo"
