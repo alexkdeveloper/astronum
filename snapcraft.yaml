@@ -9,7 +9,7 @@ confinement: strict
 apps:
   astronum:
     command: usr/bin/com.github.alexkdeveloper.astronum
-    extensions: [gnome-42]
+    extensions: [gnome]
     slots:
       - dbus-daemon
     common-id: com.github.alexkdeveloper.astronum
