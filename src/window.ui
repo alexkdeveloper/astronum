@@ -1,299 +1,159 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- Generated with glade 3.39.0 -->
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- Created with Cambalache 0.10.3 -->
 <interface>
-  <requires lib="gtk+" version="3.24"/>
-  <object class="GtkImage" id="image1">
-    <property name="visible">True</property>
-    <property name="can-focus">False</property>
-    <property name="icon-name">go-previous-symbolic</property>
-  </object>
-  <object class="GtkListStore" id="liststore">
-    <columns>
-      <!-- column-name months -->
-      <column type="gchararray"/>
-    </columns>
-    <data>
-      <row>
-        <col id="0" translatable="yes">January</col>
-      </row>
-      <row>
-        <col id="0" translatable="yes">February</col>
-      </row>
-      <row>
-        <col id="0" translatable="yes">March</col>
-      </row>
-      <row>
-        <col id="0" translatable="yes">April</col>
-      </row>
-      <row>
-        <col id="0" translatable="yes">May</col>
-      </row>
-      <row>
-        <col id="0" translatable="yes">June</col>
-      </row>
-      <row>
-        <col id="0" translatable="yes">July</col>
-      </row>
-      <row>
-        <col id="0" translatable="yes">August</col>
-      </row>
-      <row>
-        <col id="0" translatable="yes">September</col>
-      </row>
-      <row>
-        <col id="0" translatable="yes">October</col>
-      </row>
-      <row>
-        <col id="0" translatable="yes">November</col>
-      </row>
-      <row>
-        <col id="0" translatable="yes">December</col>
-      </row>
-    </data>
-  </object>
-  <template class="AstronumWindow" parent="GtkApplicationWindow">
-    <property name="can-focus">False</property>
-    <property name="default-width">300</property>
-    <property name="default-height">300</property>
+  <!-- interface-name window.ui -->
+  <template class="AstronumWindow" parent="AdwApplicationWindow">
     <child>
-      <object class="GtkStack" id="stack">
-        <property name="visible">True</property>
-        <property name="can-focus">False</property>
-        <property name="margin-start">12</property>
-        <property name="margin-end">12</property>
-        <property name="margin-top">12</property>
-        <property name="margin-bottom">12</property>
-        <property name="transition-duration">600</property>
-        <property name="transition-type">slide-left-right</property>
+      <object class="GtkBox">
+        <property name="orientation">vertical</property>
         <child>
-          <object class="GtkBox" id="data_page">
-            <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <property name="orientation">vertical</property>
-            <property name="spacing">12</property>
-            <child>
-              <object class="GtkBox">
-                <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="orientation">vertical</property>
-                <property name="spacing">6</property>
-                <child>
-                  <object class="GtkLabel">
-                    <property name="visible">True</property>
-                    <property name="can-focus">False</property>
-                    <property name="label" translatable="yes">Name:</property>
-                    <property name="xalign">0</property>
-                  </object>
-                  <packing>
-                    <property name="expand">False</property>
-                    <property name="fill">True</property>
-                    <property name="position">0</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkEntry" id="entry_name">
-                    <property name="visible">True</property>
-                    <property name="can-focus">True</property>
-                  </object>
-                  <packing>
-                    <property name="expand">True</property>
-                    <property name="fill">True</property>
-                    <property name="position">1</property>
-                  </packing>
-                </child>
+          <object class="AdwHeaderBar">
+          <property name="title-widget">
+              <object class="AdwWindowTitle">
+                <property name="title" translatable="yes">Astronum</property>
               </object>
-              <packing>
-                <property name="expand">False</property>
-                <property name="fill">True</property>
-                <property name="position">0</property>
-              </packing>
-            </child>
+            </property>
             <child>
-              <object class="GtkBox">
-                <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="orientation">vertical</property>
-                <property name="spacing">6</property>
-                <child>
-                  <object class="GtkLabel">
-                    <property name="visible">True</property>
-                    <property name="can-focus">False</property>
-                    <property name="label" translatable="yes">Day of births:</property>
-                    <property name="xalign">0</property>
+              <object class="GtkButton" id="back_button">
+                <property name="child">
+                  <object class="AdwButtonContent">
+                    <property name="icon-name">go-previous-symbolic</property>
+                    <property name="tooltip-text" translatable="yes">Back</property>
                   </object>
-                  <packing>
-                    <property name="expand">False</property>
-                    <property name="fill">True</property>
-                    <property name="position">0</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkEntry" id="entry_day">
-                    <property name="visible">True</property>
-                    <property name="can-focus">True</property>
-                  </object>
-                  <packing>
-                    <property name="expand">True</property>
-                    <property name="fill">True</property>
-                    <property name="position">1</property>
-                  </packing>
-                </child>
+                </property>
               </object>
-              <packing>
-                <property name="expand">False</property>
-                <property name="fill">True</property>
-                <property name="position">1</property>
-              </packing>
             </child>
-            <child>
-              <object class="GtkBox">
-                <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="orientation">vertical</property>
-                <property name="spacing">6</property>
-                <child>
-                  <object class="GtkLabel">
-                    <property name="visible">True</property>
-                    <property name="can-focus">False</property>
-                    <property name="label" translatable="yes">Month of births:</property>
-                    <property name="xalign">0</property>
-                  </object>
-                  <packing>
-                    <property name="expand">False</property>
-                    <property name="fill">True</property>
-                    <property name="position">0</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkComboBox" id="combobox">
-                    <property name="visible">True</property>
-                    <property name="can-focus">False</property>
-                    <property name="model">liststore</property>
-                    <property name="active">0</property>
-                    <child>
-                      <object class="GtkCellRendererText" id="renderer_months"/>
-                      <attributes>
-                        <attribute name="text">0</attribute>
-                      </attributes>
-                    </child>
-                  </object>
-                  <packing>
-                    <property name="expand">True</property>
-                    <property name="fill">True</property>
-                    <property name="position">1</property>
-                  </packing>
-                </child>
-              </object>
-              <packing>
-                <property name="expand">False</property>
-                <property name="fill">True</property>
-                <property name="position">2</property>
-              </packing>
-            </child>
-            <child>
-              <object class="GtkBox">
-                <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="orientation">vertical</property>
-                <property name="spacing">6</property>
-                <child>
-                  <object class="GtkLabel">
-                    <property name="visible">True</property>
-                    <property name="can-focus">False</property>
-                    <property name="label" translatable="yes">Year of births:</property>
-                    <property name="xalign">0</property>
-                  </object>
-                  <packing>
-                    <property name="expand">False</property>
-                    <property name="fill">True</property>
-                    <property name="position">0</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkEntry" id="entry_year">
-                    <property name="visible">True</property>
-                    <property name="can-focus">True</property>
-                  </object>
-                  <packing>
-                    <property name="expand">True</property>
-                    <property name="fill">True</property>
-                    <property name="position">1</property>
-                  </packing>
-                </child>
-              </object>
-              <packing>
-                <property name="expand">False</property>
-                <property name="fill">True</property>
-                <property name="position">3</property>
-              </packing>
-            </child>
-            <child>
+            <child type="end">
               <object class="GtkButton" id="calculate_button">
                 <property name="label" translatable="yes">CALCULATE</property>
-                <property name="visible">True</property>
-                <property name="can-focus">True</property>
-                <property name="receives-default">True</property>
               </object>
-              <packing>
-                <property name="expand">False</property>
-                <property name="fill">True</property>
-                <property name="position">4</property>
-              </packing>
             </child>
           </object>
-          <packing>
-            <property name="name">page0</property>
-            <property name="title" translatable="yes">page0</property>
-          </packing>
         </child>
+         <child>
+        <object class="AdwToastOverlay" id="overlay">
         <child>
-          <object class="GtkScrolledWindow" id="result_page">
-            <property name="visible">True</property>
-            <property name="can-focus">False</property>
+          <object class="GtkStack" id="stack">
+            <property name="transition-duration">600</property>
+            <property name="transition-type">slide-left-right</property>
             <child>
-              <object class="GtkViewport">
-                <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="shadow-type">none</property>
+              <object class="AdwClamp" id="data_page">
+                <property name="tightening-threshold">100</property>
+                <property name="valign">center</property>
+                <property name="margin-top">36</property>
+                <property name="margin-bottom">36</property>
+            <child>
+              <object class="GtkListBox">
+                 <child>
+                      <object class="AdwEntryRow" id="entry_name">
+                        <property name="title" translatable="yes">Name</property>
+                        <child>
+                          <object class="GtkButton" id="clear_name">
+                            <property name="visible">False</property>
+                            <property name="icon-name">edit-clear-symbolic</property>
+                            <property name="valign">center</property>
+                            <style>
+                              <class name="destructive-action"/>
+                              <class name="circular"/>
+                            </style>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="AdwEntryRow" id="entry_day">
+                        <property name="title" translatable="yes">Day of births</property>
+                        <child>
+                          <object class="GtkButton" id="clear_day">
+                            <property name="visible">False</property>
+                            <property name="icon-name">edit-clear-symbolic</property>
+                            <property name="valign">center</property>
+                            <style>
+                              <class name="destructive-action"/>
+                              <class name="circular"/>
+                            </style>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                   <child>
+                  <object class="GtkBox">
+                    <property name="orientation">vertical</property>
+                    <property name="spacing">3</property>
+                    <child>
+                      <object class="GtkLabel">
+                        <property name="label" translatable="yes">Month of births:</property>
+                        <property name="xalign">0.0</property>
+                      </object>
+                    </child>
+                    <child>
+                    <object class="GtkComboBoxText" id="combobox">
+                    <items>
+                      <item translatable="yes">January</item>
+                      <item translatable="yes">February</item>
+                      <item translatable="yes">March</item>
+                      <item translatable="yes">April</item>
+                      <item translatable="yes">May</item>
+                      <item translatable="yes">June</item>
+                      <item translatable="yes">July</item>
+                      <item translatable="yes">August</item>
+                      <item translatable="yes">September</item>
+                      <item translatable="yes">October</item>
+                      <item translatable="yes">November</item>
+                      <item translatable="yes">December</item>
+                   </items>
+                 </object>
+                </child>
+                </object>
+               </child>
+                    <child>
+                      <object class="AdwEntryRow" id="entry_year">
+                        <property name="title" translatable="yes">Year of births</property>
+                        <child>
+                          <object class="GtkButton" id="clear_year">
+                            <property name="visible">False</property>
+                            <property name="icon-name">edit-clear-symbolic</property>
+                            <property name="valign">center</property>
+                            <style>
+                              <class name="destructive-action"/>
+                              <class name="circular"/>
+                            </style>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                  <style>
+                    <class name="boxed-list"/>
+                  </style>
+                </object>
+              </child>
+              </object>
+            </child>
+            <child>
+              <object class="GtkScrolledWindow" id="result_page">
+                <property name="vexpand">True</property>
                 <child>
-                  <object class="GtkLabel" id="result_text">
-                    <property name="visible">True</property>
-                    <property name="can-focus">False</property>
-                    <property name="justify">center</property>
-                    <property name="wrap">True</property>
-                    <property name="selectable">True</property>
-                    <attributes>
-                      <attribute name="font-desc" value="Cantarell 12"/>
-                    </attributes>
+                  <object class="GtkViewport">
+                    <child>
+                      <object class="GtkLabel" id="result_text">
+                        <property name="can-focus">False</property>
+                        <property name="justify">center</property>
+                        <property name="selectable">True</property>
+                        <property name="wrap">True</property>
+                        <style>
+                           <class name="title-4"/>
+                        </style>
+                      </object>
+                    </child>
                   </object>
                 </child>
               </object>
-            </child>
-          </object>
-          <packing>
-            <property name="name">page1</property>
-            <property name="title" translatable="yes">page1</property>
-            <property name="position">1</property>
-          </packing>
         </child>
       </object>
     </child>
-    <child type="titlebar">
-      <object class="GtkHeaderBar" id="header_bar">
-        <property name="visible">True</property>
-        <property name="can-focus">False</property>
-        <property name="title">Astronum</property>
-        <property name="show-close-button">True</property>
-        <child>
-          <object class="GtkButton" id="back_button">
-            <property name="visible">True</property>
-            <property name="can-focus">True</property>
-            <property name="receives-default">True</property>
-            <property name="tooltip-text" translatable="yes">Back</property>
-            <property name="image">image1</property>
-          </object>
-        </child>
-      </object>
-    </child>
-  </template>
+   </object>
+ </child>
+</object>
+</child>
+</template>
 </interface>

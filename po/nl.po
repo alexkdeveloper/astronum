@@ -106,20 +106,20 @@ msgid "December"
 msgstr "december"
 
 #: src/window.ui:84
-msgid "Name:"
-msgstr "Naam:"
+msgid "Name"
+msgstr "Naam"
 
 #: src/window.ui:121
-msgid "Day of births:"
-msgstr "Geboortedag:"
+msgid "Day of births"
+msgstr "Geboortedag"
 
 #: src/window.ui:158
 msgid "Month of births:"
 msgstr "Geboortemaand:"
 
 #: src/window.ui:203
-msgid "Year of births:"
-msgstr "Geboortejaar:"
+msgid "Year of births"
+msgstr "Geboortejaar"
 
 #: src/window.ui:232
 msgid "CALCULATE"

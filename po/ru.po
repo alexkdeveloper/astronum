@@ -390,20 +390,20 @@ msgid "December"
 msgstr "Декабрь"
 
 #: window.ui:84
-msgid "Name:"
-msgstr "Имя:"
+msgid "Name"
+msgstr "Имя"
 
 #: window.ui:121
-msgid "Day of births:"
-msgstr "День рождения:"
+msgid "Day of births"
+msgstr "День рождения"
 
 #: window.ui:158
 msgid "Month of births:"
 msgstr "Месяц рождения:"
 
 #: window.ui:203
-msgid "Year of births:"
-msgstr "Год рождения:"
+msgid "Year of births"
+msgstr "Год рождения"
 
 #: window.ui:232
 msgid "CALCULATE"
