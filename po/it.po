@@ -1,0 +1,135 @@
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the astronum package.
+# Albano Battistella <albano_battistella@hotmail.com>, 2022.
+msgid ""
+msgstr ""
+"Project-Id-Version: astronum\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-03 17:22+0200\n"
+"PO-Revision-Date: 2022-11-27 20:27+0200\n"
+"Last-Translator: Albano Battistella <albano_battistella@hotmail.com>\n"
+"Language-Team: Italian <>\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 22.04.0\n"
+
+#: data/com.github.alexkdeveloper.astronum.desktop.in:3
+#: data/com.github.alexkdeveloper.astronum.appdata.xml.in:6
+msgid "Astronum"
+msgstr "Astronum"
+
+#: data/com.github.alexkdeveloper.astronum.desktop.in:4
+#: data/com.github.alexkdeveloper.astronum.appdata.xml.in:7
+msgid "Program for simple astrological and numerological calculations"
+msgstr "Programma per semplici calcoli astrologici e numerologici"
+
+#: data/com.github.alexkdeveloper.astronum.appdata.xml.in:9
+msgid ""
+"The application allows you to calculate the numbers of the name and birth, "
+"the psychomatrix and the signs of some horoscopes."
+msgstr ""
+"L'applicazione consente di calcolare i numeri del nome e della nascita, "
+"la psicomatrice e i segni di alcuni oroscopi."
+
+#: data/com.github.alexkdeveloper.astronum.appdata.xml.in:14
+msgid "Alex Kryuchkov"
+msgstr "Alex Kryuchkov"
+
+#: data/com.github.alexkdeveloper.astronum.appdata.xml.in:32
+msgid "UI update"
+msgstr "Aggiornamento dell'interfaccia utente"
+
+#: data/com.github.alexkdeveloper.astronum.appdata.xml.in:33
+msgid "Update to GNOME Platform 42"
+msgstr "Aggiornamento alla piattaforma GNOME 42"
+
+#: data/com.github.alexkdeveloper.astronum.appdata.xml.in:34
+msgid "Added druid horoscope"
+msgstr "Aggiunto l'oroscopo dei druidi"
+
+#: data/com.github.alexkdeveloper.astronum.appdata.xml.in:41
+msgid "Initial release"
+msgstr "Versione iniziale"
+
+#: src/window.ui:17
+msgid "January"
+msgstr "Gennaio"
+
+#: src/window.ui:20
+msgid "February"
+msgstr "Febbraio"
+
+#: src/window.ui:23
+msgid "March"
+msgstr "Marzo"
+
+#: src/window.ui:26
+msgid "April"
+msgstr "Aprile"
+
+#: src/window.ui:29
+msgid "May"
+msgstr "Maggio"
+
+#: src/window.ui:32
+msgid "June"
+msgstr "Giugno"
+
+#: src/window.ui:35
+msgid "July"
+msgstr "Luglio"
+
+#: src/window.ui:38
+msgid "August"
+msgstr "Agosto"
+
+#: src/window.ui:41
+msgid "September"
+msgstr "Settembre"
+
+#: src/window.ui:44
+msgid "October"
+msgstr "Ottobre"
+
+#: src/window.ui:47
+msgid "November"
+msgstr "Novembre"
+
+#: src/window.ui:50
+msgid "December"
+msgstr "Dicembre"
+
+#: src/window.ui:84
+msgid "Name"
+msgstr "Nome"
+
+#: src/window.ui:121
+msgid "Day of births"
+msgstr "Giorno di nascita"
+
+#: src/window.ui:158
+msgid "Month of births"
+msgstr "Mese di nascita"
+
+#: src/window.ui:203
+msgid "Year of births"
+msgstr "Anno di nascita"
+
+#: src/window.ui:232
+msgid "CALCULATE"
+msgstr "CALCOLA"
+
+#: src/window.ui:246
+msgid "page0"
+msgstr "pagina0"
+
+#: src/window.ui:275
+msgid "page1"
+msgstr "pagina1"
+
+#: src/window.ui:292
+msgid "Back"
+msgstr "Indietro"
