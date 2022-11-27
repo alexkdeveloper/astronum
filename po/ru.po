@@ -398,8 +398,8 @@ msgid "Day of births"
 msgstr "День рождения"
 
 #: window.ui:158
-msgid "Month of births:"
-msgstr "Месяц рождения:"
+msgid "Month of births"
+msgstr "Месяц рождения"
 
 #: window.ui:203
 msgid "Year of births"

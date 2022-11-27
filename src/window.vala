@@ -28,7 +28,7 @@ namespace Astronum {
         [GtkChild]
         unowned Gtk.Label result_text;
         [GtkChild]
-        unowned Gtk.ComboBoxText combobox;
+        unowned Adw.ComboRow combo;
         [GtkChild]
         unowned Adw.EntryRow entry_name;
         [GtkChild]
@@ -68,7 +68,6 @@ namespace Astronum {
             clear_year.clicked.connect((event) => {
                 on_clear_entry(entry_year);
             });
-            combobox.set_active(0);
             set_widget_visible(back_button,false);
             back_button.clicked.connect(go_to_data_page);
             calculate_button.clicked.connect(on_calculate);
@@ -111,7 +110,7 @@ namespace Astronum {
             entry_name.grab_focus();
             return;
         }
-        int month = combobox.get_active()+1;
+        int month = (int)combo.get_selected()+1;
         if(input_correct(day,month,year))return;
            stack.visible_child = result_page;
            set_widget_visible(back_button,true);

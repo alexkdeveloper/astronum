@@ -76,35 +76,28 @@
                         </child>
                       </object>
                     </child>
-                   <child>
-                  <object class="GtkBox">
-                    <property name="orientation">vertical</property>
-                    <property name="spacing">3</property>
                     <child>
-                      <object class="GtkLabel">
-                        <property name="label" translatable="yes">Month of births:</property>
-                        <property name="xalign">0.0</property>
+                    <object class="AdwComboRow" id="combo">
+                      <property name="title" translatable="yes">Month of births</property>
+                      <property name="model">
+                      <object class="GtkStringList">
+                         <items>
+                           <item translatable="yes">January</item>
+                           <item translatable="yes">February</item>
+                           <item translatable="yes">March</item>
+                           <item translatable="yes">April</item>
+                           <item translatable="yes">May</item>
+                           <item translatable="yes">June</item>
+                           <item translatable="yes">July</item>
+                           <item translatable="yes">August</item>
+                           <item translatable="yes">September</item>
+                           <item translatable="yes">October</item>
+                           <item translatable="yes">November</item>
+                           <item translatable="yes">December</item>
+                         </items>
                       </object>
-                    </child>
-                    <child>
-                    <object class="GtkComboBoxText" id="combobox">
-                    <items>
-                      <item translatable="yes">January</item>
-                      <item translatable="yes">February</item>
-                      <item translatable="yes">March</item>
-                      <item translatable="yes">April</item>
-                      <item translatable="yes">May</item>
-                      <item translatable="yes">June</item>
-                      <item translatable="yes">July</item>
-                      <item translatable="yes">August</item>
-                      <item translatable="yes">September</item>
-                      <item translatable="yes">October</item>
-                      <item translatable="yes">November</item>
-                      <item translatable="yes">December</item>
-                   </items>
-                 </object>
-                </child>
-                </object>
+                    </property>
+                   </object>
                </child>
                     <child>
                       <object class="AdwEntryRow" id="entry_year">

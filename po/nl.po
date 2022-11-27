@@ -114,8 +114,8 @@ msgid "Day of births"
 msgstr "Geboortedag"
 
 #: src/window.ui:158
-msgid "Month of births:"
-msgstr "Geboortemaand:"
+msgid "Month of births"
+msgstr "Geboortemaand"
 
 #: src/window.ui:203
 msgid "Year of births"
