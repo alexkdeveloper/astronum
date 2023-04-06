@@ -78,6 +78,7 @@
                     </child>
                     <child>
                     <object class="AdwComboRow" id="combo">
+                      <property name="selectable">False</property>
                       <property name="title" translatable="yes">Month of births</property>
                       <property name="model">
                       <object class="GtkStringList">
