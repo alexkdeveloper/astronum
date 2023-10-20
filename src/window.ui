@@ -31,8 +31,8 @@
             </child>
           </object>
         </child>
-         <child>
-        <object class="AdwToastOverlay" id="overlay">
+        <child>
+         <object class="AdwToastOverlay" id="overlay">
         <child>
           <object class="GtkStack" id="stack">
             <property name="transition-duration">600</property>
